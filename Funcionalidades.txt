@@ -1,0 +1,68 @@
+Historia de usuario
+
+Funcionalidad 1: Enviar un numero
+    - Como: usuario.
+    - Quiero: Enviar un numero
+    - Para: Poder ver que numero se envio y comprobar que el programa funcione bien
+Criterios de confirmación:
+    ● Mostrar el numero enviado por el usuario
+
+Funcionalidad 2: Enviar una cadena de numeros
+    - Como: usuario.
+    - Quiero: Enviar una cadena de numeros
+    - Para: Poder ver la suma de la cadena de todos esos numeros 
+Criterios de confirmación:
+    ● Recibir los numeros enviado por el usuario
+    ● Se deberia mostrar la suma de esa cadena de numeros. Por ejm: “1,2,4,8”  retorna 15
+
+
+Funcionalidad 3: Poder usar el guion(-) como separador
+    - Como: usuario.
+    - Quiero: Poder usar el guion como un seprarador en lugar de la coma(,)
+    - Para:  Tener un mayor control del programa
+Criterios de confirmación:
+    ● Recibir los numeros enviado por el usuario
+    ● Se deberia poder usar el guion para separar los numeros. Por ejemplo: “1-2,3”  retorna 6
+
+Funcionalidad 4: Enviar una cadena de numeros especificando un delimitador
+    - Como: usuario.
+    - Quiero: Enviar una cadena de numeros especificando que delimitador quiero para separarlos
+    - Para: Poder ver la suma de la cadena de todos esos numeros 
+Criterios de confirmación:
+    ● Recibir los numeros enviado por el usuario
+    ● El usuario podra seleccionar que caracteres quiere usar como delimitador para enviar la cadena
+    ● Se deberia mostrar la suma de esa cadena de numeros correctamente separados por el delimitador
+    Por ejemplo el delimitador ‘;’ se especifica así:  “//[;]\n 6;7;4”  retorna 17. Es decir: “//[delimitador]\n secuencia de números”
+
+
+Funcionalidad 5: Ignorar los numeros mayores a 1000
+    - Como: administrador.
+    - Quiero: Ignorar los numeros en la cadena que sean mayores a 1000
+    - Para:  Evitar que estos numeros cuenten en la suma de cadenas
+Criterios de confirmación:
+    ● Recibir los numeros enviado por el usuario
+    ● Se retornara la suma de la caden de esos numeros enviados
+    ● Los numeros que esten en la cadena mayores a 100 seran ignorados para la suma
+    Por ejemplo: “2, 1001” debería retornar 2
+
+
+Funcionalidad 6: Especificar delimitadores de cualquier longitud (de mas de un caracter)
+    - Como: usuario.
+    - Quiero: Poder especificar usar delimitadores de mas de un caracter
+    - Para:  Tener mayor control del programa
+Criterios de confirmación:
+    ● Recibir los numeros enviado por el usuario
+    ● Se retornara la suma de la caden de esos numeros enviados
+    ● Poder especificar delimitadores de cualquier longitud, usando el formato: “//[delimitador]\n”
+    .Por ejemplo: “//[***]\n 1***2***3” debería retornar 6
+
+
+Funcionalidad 7: Poder especificar multiples delimitador
+    - Como: usuario.
+    - Quiero: Poder especificar multiples delimitadores para mi cadena de numeros
+    - Para:  Tener un mayor control del progrmaa
+Criterios de confirmación:
+    ● Recibir los numeros enviado por el usuario
+    ● Se retornara la suma de la caden de esos numeros enviados
+    ● Se deberia poder indicar multiples delimitadores usando el formato “//[delim1][delim2]\n”. 
+    Por ejemplo: “//[*][%]\n1*2%3,7-9” que debería retornar 22
