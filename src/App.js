@@ -7,6 +7,7 @@ function Get_delimiter(numberString){
       if(char != ']' && char != '[') { delimiter = delimiter + char; } 
     });
     delimiter = "(" + delimiter + ")";
+    console.log(delimiter);
     return delimiter;
   }
   else return delimiter;
@@ -17,6 +18,7 @@ function CalculadoraCadenas(numbers) {
   var delimiter = Get_delimiter(numbers);
   let delimiter_regex = new RegExp("[-,"+ delimiter +"]");
   numbers = numbers.replace(/\/\/\[(.)+\]\/n /g, "");
+  console.log(numbers);
   numbers.split(delimiter_regex).forEach(number => {
     if(number <= 1000 && number != '') { sum = sum + parseInt(number); }
   });

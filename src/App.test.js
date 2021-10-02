@@ -22,4 +22,7 @@ describe("CalculadoraCadenas", () => {
   it("deberia leer separadores de mas de un caracter", () => {
     expect(CalculadoraCadenas( "//[***]/n 1***2***3")).toEqual(6);
   });
+  it("deberia poderse usar mas de un delimitador", () => {
+    expect(CalculadoraCadenas("//[*][%]/n 1*2%3,7-9")).toEqual(22);
+  });
 });
