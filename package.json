@@ -4,6 +4,7 @@
   "description": "",
   "default": "index.html",
   "scripts": {
+    "debug": "node --inspect App.js",
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest --watch",
